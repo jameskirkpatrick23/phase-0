@@ -37,3 +37,9 @@ rmdir- deletes a directory (MUST NOT HAVE ANYTHING IN IT)
 rm- removes files
 
 help- apparently the guy thought this function was silly, but its designed to find help in certain sections
+
+### first and foremost, I would make sure that people actually understand what they can do. I had a lot of trouble, and unnecessary frustration trying to figure out how to find all the files on my computer when using a virtual machine. Turns out I just had to use windows powershell. who knew right? also, thank you so much Mike. You are a godsend for helping me out with that.
+
+as for answering the question in its entirety, I would say "it's easy!" first, you need to make a file that you want to work on. After that, you would have to save it to github. (I am unsure if this would be where you would initiate git, then commit the file. i believe that it possibly what we are supposed to do, but not sure) . From there, forking is as easy as 1,2,3! All you ahve to do is go under the file settings on github and hit the fork button!!! from there you might have to click on a few extra small things like MIT formatting, but its pretty straightforward. Next you look at the middle right side of the screen and copy the URL of the file you just forked. then, all you have to do to get it on your computer is type "git init" to your command line, followed by "git clone whateverurliwantedtocopy". Viola! you have a new fully functioning clone of the thing you wanted!
+
+My struggles were mentioned above, and were mainly misunderstanding what I was allowed to work with in terms of hardward that caused a lot of problems. But at the end of the day, the office hours with mike helped out and I was able to complete it with little trouble afterwords!
