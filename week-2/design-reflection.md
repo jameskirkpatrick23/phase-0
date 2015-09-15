@@ -19,4 +19,4 @@ User experience or UX is the research, study, and implmentation of strategies de
 Which parts of the challenge did you find tedious?
 I really didn't find anything tedious. If anything, I actually found them to be quite fun!
 
-Here is a picture of the sitemap!!! ![Alt text](/imgs/site-map.png "Site-Map")
+Here is a picture of the sitemap!!! ![Alt text](site-map.png "Site-Map")
