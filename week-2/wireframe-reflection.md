@@ -16,7 +16,7 @@ Why am I making this site, what am I trying to protrait about myself, what am I 
 Which parts of the challenge did you enjoy and which parts did you find tedious?
 I enjoyed the whole thing actualy. It makes the idea of having your own website suddenly believable
 
-Here are the pictures from the wireframing that I worked on:
+Here are the pictures from the wireframing that I worked on (Hover tooltip for descriptions):
 ![Alt text](/week-2/imgs/Base-Side-Layout-Wireframe.png "This would be the landing page")
 ![Alt text](/week-2/imgs/Portfolio-Select-Work-Wireframe.png "This is a concept for letting users select what they want to see upon selecting a tab at the top")
 ![Alt text](/week-2/imgs/Portfolio-Work-Selected-Wireframe.png "This would be what the user would see once they actually choose an option to view")
