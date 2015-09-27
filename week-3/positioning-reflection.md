@@ -1,12 +1,12 @@
-![alt text](../imgs/Release 1.png "Release 0")
-![alt text](../imgs/Release 2.png "Release 1")
-![alt text](../imgs/Release 3.png "Release 2")
-![alt text](../imgs/Release 4.png "Release 3")
-![alt text](../imgs/Release 5.png "Release 4")
-![alt text](../imgs/Release 6.png "Release 5")
-![alt text](../imgs/Release 7.png "Release 6")
-![alt text](../imgs/Release 8.png "Release 7")
-![alt text](../imgs/Release 9.png "Release 8")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%201.png "Release 0")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%202.png "Release 1")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%203.png "Release 2")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%204.png "Release 3")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%205.png "Release 4")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%206.png "Release 5")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%207.png "Release 6")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%208.png "Release 7")
+![alt text](https://github.com/jkirkpatrick1990/phase-0/blob/master/week-3/imgs/Release%209.png "Release 8")
 
 
 How can you use Chrome's DevTools inspector to help you format or position elements?
