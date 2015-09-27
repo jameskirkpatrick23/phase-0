@@ -1,12 +1,12 @@
-![alt text](/imgs/Release 1.png "Release 0")
-![alt text](/imgs/Release 2.png "Release 1")
-![alt text](/imgs/Release 3.png "Release 2")
-![alt text](/imgs/Release 4.png "Release 3")
-![alt text](/imgs/Release 5.png "Release 4")
-![alt text](/imgs/Release 6.png "Release 5")
-![alt text](/imgs/Release 7.png "Release 6")
-![alt text](/imgs/Release 8.png "Release 7")
-![alt text](/imgs/Release 9.png "Release 8")
+![alt text](../imgs/Release 1.png "Release 0")
+![alt text](../imgs/Release 2.png "Release 1")
+![alt text](../imgs/Release 3.png "Release 2")
+![alt text](../imgs/Release 4.png "Release 3")
+![alt text](../imgs/Release 5.png "Release 4")
+![alt text](../imgs/Release 6.png "Release 5")
+![alt text](../imgs/Release 7.png "Release 6")
+![alt text](../imgs/Release 8.png "Release 7")
+![alt text](../imgs/Release 9.png "Release 8")
 
 
 How can you use Chrome's DevTools inspector to help you format or position elements?
