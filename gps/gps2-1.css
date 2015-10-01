@@ -1,0 +1,43 @@
+header {border-style: solid;
+          border-color: black;
+          border-width: 5px;
+          padding: 2em;
+          color: blue;
+          text-align: center;
+          background-color: lightgreen;
+}
+
+.column-1 {border-style: solid;
+          border-color: black;
+          border-width: 5px;
+          padding: 2em;
+          color: black;
+          position: absolute;
+          width: 40%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          background-color: yellow;
+
+
+}
+.column-2 {border-style: solid;
+          border-color: black;
+          border-width: 5px;
+          padding: 2em;
+          width: 40%;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          margin-left: 53%;
+          position: absolute;
+          background-color: yellow;
+
+}
+footer {
+          border-style: solid;
+          border-color: black;
+          border-width: 5px;
+          text-align: center;
+          margin-top: 85%;
+          background-color: lightgreen;
+
+}
