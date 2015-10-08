@@ -2,11 +2,11 @@
 # Read in every member into an array temporarily to hold them
 # look to find a way to split that array up
 # possibly look to push every 3 or 4 people into a hash, and use hash key as each new group
-student_array = ["James", "Jorge", "Kyle", "Dave", "Jeff", "John", "Allen", "Billy", "Annie", "Krissy", "Mike", "Bill", "Jesper", "Shawn"]
+student_array = ["Joshua Abrams", "Syema Ailia", "Kris Beis", "Alexander Blair", "Andrew Blum", "Jacob Boer", "Steven Broderick", "Ovi Calvo", "Danielle Cameron", "Celeste Carter", "Eran Chazan", "Jonathan Chen", "Un Choi", "Kevin Corso", "Eric Dell'Aringa", "Eunice Do", "Ronny Ewanek", "John Paul Chaufan Field", "Eric Freeburg", "Jeffrey George", "Jamar Gibbs", "Paul Gaston Gouron", "Gabrielle Gustillo", "Marie-France Han", "Noah Heinrich", "Jack Huang", "Max Iniguez", "Mark Janzer", "Michael Jasinski", "Lars Johnson", "Joshua Kim", "James Kirkpatrick", "Chistopher Lee", "Isaac Lee", "Joseph Marion", "Kevin Mark", "Bernadette Masciocchi", "Bryan Munroe", "Becca Nelson", "Van Phan", "John Polhill", "Jerry Powell", "Jessie Richardson", "David Roberts", "Armani Saldana", "Chris Savage", "Parminder Singh", "Kyle Smith", "Aaron Tsai", "Douglas Tsui", "Deanna Warren", "Peter Wiebe", "Daniel Woznicki", "Jay Yee", "Nicole Yee", "Bruno Zatta"]
 
 def acct_group (array_of_students)
   array_of_students.shuffle!
-  num_groups = array_of_students.length / 3
+  num_groups = array_of_students.length / 4
   current_group = 1
   accountability_hash = Hash.new ()
 
