@@ -91,3 +91,12 @@ class CreditCard
   end
 
 end
+
+# What was the most difficult part of this challenge for you and your pair?
+# The most difficult part was in figuring out how the arrays were counting up or down on their indexes when we attempted to modify them. ultimately we were able to figure it out though.
+
+# What new methods did you find to help you when you refactored?
+# We utilized the .each and the .times to be the most useful
+
+# What concepts or learnings were you able to solidify in this challenge?
+# The concepts solidified were specifically based around class methods and passing through information between methods. It was a good challenge to help
