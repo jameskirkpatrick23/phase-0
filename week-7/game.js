@@ -3,18 +3,27 @@
 // This is a solo challenge
 
 // Your mission description:
-// Overall mission:
-// Goals:
-// Characters:
-// Objects:
-// Functions:
+
+// Escape Gollum's Cave!!!
+// Relive the classic interaction between bilbo baggins and Gollum in this text based adventure!
+
+// Overall mission: Answer 4 riddles correct to make it out of the cave!
+// Goals: Answer 4 riddles correctly, and escape the cave
+// Characters: Gollum, Smeagol, Bilbo
+// Objects: Objects for each character that houses lines to say and riddles to ask
+// Functions: Function to play the game and to check ask riddles
 
 // Pseudocode
-//
-//
-//
-//
-//
+//Set the scene, and introduce our hero to the situation. Then begin the riddle game
+//Have bilbo ask a question of gollum
+//have gollum answer
+//have gollum/smeagol ask a riddle of bilbo
+//prompt user with a set of 4 possible answers
+// check if user is correct in their guess
+// if correct, repeat with new riddle
+// if wrong end game and say he died a horrible death
+// repeat for 4 riddles
+// if correct on all 4 riddles, display victory scene
 
 // Initial Code
 var riddleNumber = 0
