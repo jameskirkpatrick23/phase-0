@@ -151,19 +151,15 @@ while (stillAlive && riddleNumber < 5){
     riddleNumber += 1
 }
 
-// Refactored Code
-
-
-
-
-
-
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+//What was the most difficult part of this challenge?
+//  Probably the most difficult part of the challenge was remembering the difference in syntax between JavaScript and Ruby
+
+// What did you learn about creating objects and functions that interact with one another?
+//  Object creation is very similar to Ruby class construction, and overall interactions are pretty similar. I think I could work some more on this over the course of the week to add in more class interactions
+
+// Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+// I actually didn't have much time to work on this, and had less time on my refactored solution than I wanted. If I were to refactor it, I would likely add in a form of randomness that is called by the riddle number etc.
+
+// How can you access and manipulate properties of objects?
+// objectName.objectMethod/Attribute() or =
