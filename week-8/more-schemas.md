@@ -1,9 +1,9 @@
-![schema image](/imgs/One-To-One-Schema.png?raw=true "One To One Schema")
+![schema image](imgs/One-To-One-Schema.png?raw=true "One To One Schema")
 
 The reason that this relationship is one to one is that while there can be many cars made by the same manufacturer, and of the same model, and even of the same year, there can only be one liscence plate attached to a car, and in some cases if they are not sole yet they do not even have one. That liscence plate however maps itself to a person's driver's license number and therefore all the personal information of that individual.
 
 
-![schema image](/imgs/Grocery-List-Schema.png?raw=true "Grocery List Schema")
+![schema image](imgs/Grocery-List-Schema.png?raw=true "Grocery List Schema")
 
 This is the Many to Many relationship schema
 
