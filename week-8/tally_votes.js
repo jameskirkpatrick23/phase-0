@@ -29,104 +29,178 @@ var votes = {
 
 // TRY TO MAKE EACH OF THESE INTO INDIVIDUAL METHODS, then call them
 
+// INITIAL SOLUTION
+
 // current problem is that president and every other part is in one big string.
-var president = []
-var vicePresident = []
-var secretary = []
-var treasurer = []
-// get things into an array so we can count them
-for (var key in votes) {
-   if (votes.hasOwnProperty(key)) {
-       var obj = votes[key]
-       president.push(obj.president)
-       vicePresident.push(obj.vicePresident)
-       secretary.push(obj.secretary)
-       treasurer.push(obj.treasurer)
-    }
-}
-
-president.sort();
-vicePresident.sort();
-secretary.sort();
-treasurer.sort();
-
-
-// var counts = {};
-var counter = function (array, hash){
-  for(var i = 0; i < array.length; i++) {
-      var candidate = array[i];
-//         if the next candidate is the same as current candidate, add one to the value, otherwise do nothing
-      hash[candidate] = hash[candidate] ? hash[candidate]+1 : 1;
+  var president = []
+  var vicePresident = []
+  var secretary = []
+  var treasurer = []
+  // get things into an array so we can count them
+  for (var key in votes) {
+     if (votes.hasOwnProperty(key)) {
+         var obj = votes[key]
+         president.push(obj.president)
+         vicePresident.push(obj.vicePresident)
+         secretary.push(obj.secretary)
+         treasurer.push(obj.treasurer)
+      }
   }
-}
+
+  president.sort();
+  vicePresident.sort();
+  secretary.sort();
+  treasurer.sort();
 
 
-var voteCount = {
-  president: {},
-  vicePresident: {},
-  secretary: {},
-  treasurer: {}
-}
-counter(president, voteCount.president);
-counter(secretary, voteCount.secretary);
-counter(vicePresident, voteCount.vicePresident);
-counter(treasurer, voteCount.treasurer);
-
-
-var officers = {
-  president: undefined,
-  vicePresident: undefined,
-  secretary: undefined,
-  treasurer: undefined
-}
-
-// console.log(voteCount.president)
-
-
-var maximum = function(hash){
-//   define an empty array
-    var array = [];
-//   for each value in our given hash(looking for the candidates)
-    for(var value in hash){
-//       push the candidate name onto the array
-       array.push(hash[value]);
+  // var counts = {};
+  var counter = function (array, hash){
+    for(var i = 0; i < array.length; i++) {
+        var candidate = array[i];
+  //         if the next candidate is the same as current candidate, add one to the value, otherwise do nothing
+        hash[candidate] = hash[candidate] ? hash[candidate]+1 : 1;
     }
-// declare a maximum variable that is equal to the highest number of votes in our hash (in president case it is set to 13)
-    var max = Math.max.apply(null, array);
-// check each value to see if it is equal to that 13 number, and if it is then you return that name
-     for(var value in hash){
-        if(hash[value] == max){
-            return value;
-        }
-    }
-}
-officers.president = maximum(voteCount.president);
-officers.vicePresident = maximum(voteCount.vicePresident);
-officers.secretary = maximum(voteCount.secretary);
-officers.treasurer = maximum(voteCount.treasurer);
-// console.log(officers)
+  }
 
 
-
-// console.log(voteCount.president.)
-  // ACCESSING VALUES: President Votes[x][0(or president:)][mode], VP [x][1], Secretary[x][2], Treasurer[x][3]
-
-  // We have a nested data structure, we are given a series of keys which represent voters. Those voters then have a series of four votes, one for each position held in a key-value structure.
-  // Goal is to access each INNER key value pair, record each person (v) getting vote in each office (k), then later decide who has the most votes.
-  /* The name of each student receiving a vote for an office should become a property
-  of the respective office in voteCount.  After Alex's votes have been tallied,
-  voteCount would be ...
-    var voteCount = {
-      president: { Bob: 1 },
-      vicePresident: { Devin: 1 },
-      secretary: { Gail: 1 },
-      treasurer: { Kerry: 1 }
-    }
-  */
+  var voteCount = {
+    president: {},
+    vicePresident: {},
+    secretary: {},
+    treasurer: {}
+  }
+  counter(president, voteCount.president);
+  counter(secretary, voteCount.secretary);
+  counter(vicePresident, voteCount.vicePresident);
+  counter(treasurer, voteCount.treasurer);
 
 
-  /* Once the votes have been tallied, assign each officer position the name of the
-  student who received the most votes. */
+  var officers = {
+    president: undefined,
+    vicePresident: undefined,
+    secretary: undefined,
+    treasurer: undefined
+  }
+
+  // console.log(voteCount.president)
+
+
+  var maximum = function(hash){
+  //   define an empty array
+      var array = [];
+  //   for each value in our given hash(looking for the candidates)
+      for(var value in hash){
+  //       push the candidate name onto the array
+         array.push(hash[value]);
+      }
+  // declare a maximum variable that is equal to the highest number of votes in our hash (in president case it is set to 13)
+      var max = Math.max.apply(null, array);
+  // check each value to see if it is equal to that 13 number, and if it is then you return that name
+       for(var value in hash){
+          if(hash[value] == max){
+              return value;
+          }
+      }
+  }
+  officers.president = maximum(voteCount.president);
+  officers.vicePresident = maximum(voteCount.vicePresident);
+  officers.secretary = maximum(voteCount.secretary);
+  officers.treasurer = maximum(voteCount.treasurer);
+
+console.log(officers)
+
+// REFACTORED SOLUTION- FAULIRE
+  // var array = []
+  // // get things into an array so we can count them
+  // var sortVotes = function (array){
+  //   for (var key in votes) {
+  //      if (votes.hasOwnProperty(key)) {
+  //          var obj = votes[key]
+  //          array.push(key)
+  //       }
+  //   }
+  //   return array.sort();
+  // }
+
+
+  // console.log(sortVotes(array))
+  // // secretary.sort();
+  // // treasurer.sort();
+
+
+  // // var counts = {};
+  // var counter = function (array, hash){
+  //   for(var i = 0; i < array.length; i++) {
+  //       var candidate = array[i];
+  // //         if the next candidate is the same as current candidate, add one to the value, otherwise do nothing
+  //       hash[candidate] = hash[candidate] ? hash[candidate]+1 : 1;
+  //   }
+  // }
+
+
+  // var voteCount = {
+  //   president: {},
+  //   vicePresident: {},
+  //   secretary: {},
+  //   treasurer: {}
+  // }
+  // // counter(president, voteCount.president);
+  // // counter(secretary, voteCount.secretary);
+  // // counter(vicePresident, voteCount.vicePresident);
+  // // counter(treasurer, voteCount.treasurer);
+
+
+  // var officers = {
+  //   president: undefined,
+  //   vicePresident: undefined,
+  //   secretary: undefined,
+  //   treasurer: undefined
+  // }
+
+  // // console.log(voteCount.president)
+
+
+  // var maximum = function(hash){
+  // //   define an empty array
+  //     var array = [];
+  // //   for each value in our given hash(looking for the candidates)
+  //     for(var value in hash){
+  // //       push the candidate name onto the array
+  //        array.push(hash[value]);
+  //     }
+  // // declare a maximum variable that is equal to the highest number of votes in our hash (in president case it is set to 13)
+  //     var max = Math.max.apply(null, array);
+  // // check each value to see if it is equal to that 13 number, and if it is then you return that name
+  //      for(var value in hash){
+  //         if(hash[value] == max){
+  //             return value;
+  //         }
+  //     }
+  // }
+  // // officers.president = maximum(voteCount.president);
+  // // officers.vicePresident = maximum(voteCount.vicePresident);
+  // // officers.secretary = maximum(voteCount.secretary);
+  // // officers.treasurer = maximum(voteCount.treasurer);
+
+  // // console.log(voteCount.president.)
+  //   // ACCESSING VALUES: President Votes[x][0(or president:)][mode], VP [x][1], Secretary[x][2], Treasurer[x][3]
+
+  //   // We have a nested data structure, we are given a series of keys which represent voters. Those voters then have a series of four votes, one for each position held in a key-value structure.
+  //   // Goal is to access each INNER key value pair, record each person (v) getting vote in each office (k), then later decide who has the most votes.
+  //   /* The name of each student receiving a vote for an office should become a property
+  //   of the respective office in voteCount.  After Alex's votes have been tallied,
+  //   voteCount would be ...
+  //     var voteCount = {
+  //       president: { Bob: 1 },
+  //       vicePresident: { Devin: 1 },
+  //       secretary: { Gail: 1 },
+  //       treasurer: { Kerry: 1 }
+  //     }
+  //   */
+
+
+  //   /* Once the votes have been tallied, assign each officer position the name of the
+  //   student who received the most votes. */
 
 
 
@@ -186,3 +260,15 @@ assert(
   "Ivy should be elected Treasurer.",
   "8. "
 )
+
+
+
+// REFLECTION
+// What did you learn about iterating over nested objects in JavaScript?
+// It isn't particularly pretty, and we had a real rough time of it. I guess you could say we learned to try and avoid it at all costs haha
+
+// Were you able to find useful methods to help you with this?
+// the most useful by far was the for key in object iterator. and second unto that was the .hasOwnProperty method that could be called onto the working key
+
+// What concepts were solidified in the process of working through this challenge?
+// generally, loops and iteration, and the idea that its okay to mess up a lot so long as you keep trying and get to something that works. From there its just refactoring
